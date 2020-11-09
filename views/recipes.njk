@@ -1,238 +1,62 @@
 {% extends "layout.njk" %}
 
-
 {% block content %}
 
   {% block head %}
-      
+
     <title>Foodfy - Recipes</title>
 
   {% endblock %}
 
-    <main>
-      <div class="banner__container">
-        <div class="banner__container-content">
-          <h1>As melhores receitas</h1>
-          <p>
-            Aprenda a construir os melhores pratos com receitas criadas por
-            profissionais do mundo inteiro.
-          </p>
-        </div>
-        <div class="banner__container-chef">
-          <img src="/assets/images/chef.png" />
-        </div>
+  <main>
+    <div class="banner__container">
+      <div class="banner__container-content">
+        <h1>As melhores receitas</h1>
+        <p>
+          Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
+        </p>
       </div>
-    </main>
-
-    <!-- Cards Section -->
-    <section class="cards">
-      <h4>Mais Acessadas</h4>
-      <div class="card__container">
-        <div class="card" id="burger.png">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/burger.png"
-              alt="Triplo Bacon Burguer"
-            />
-          </div>
-          <div class="card__title">
-            <h2 class="recipe__name">Triplo Bacon Burguer</h2>
-          </div>
-          <div class="card__description">
-            <p class="author">Por Jorge Relato</p>
-            <p>R$ 14.99</p>
-          </div>
-        </div>
-
-        <div class="card" id="pizza.png">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/pizza.png"
-              alt="Pizza 4 estações"
-            />
-          </div>
-          <div class="card__title">
-            <h2 class="recipe__name">Pizza 4 estações</h2>
-          </div>
-          <div class="card__description">
-            <p class="author">Por Fabianna Melo</p>
-            <p>R$ 72.55</p>
-          </div>
-        </div>
-
-        <div class="card" id="espaguete.png">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/espaguete.png"
-              alt="espaguete ao alho"
-            />
-          </div>
-          <div class="card__title">
-            <h2 class="recipe__name">Espaguete ao alho</h2>
-          </div>
-          <div class="card__description">
-            <p class="author">Por Júlia Kinoto</p>
-            <p>R$ 72.55</p>
-          </div>
-        </div>
-
-        <div class="card" id="lasanha.png">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/lasanha.png"
-              alt="Lasanha mac n' cheese"
-            />
-          </div>
-          <div class="card__title">
-            <h2 class="recipe__name">Lasanha mac n' cheese</h2>
-          </div>
-          <div class="card__description">
-            <p class="autho">Por Juliano Vieira</p>
-            <p>R$ 35.70</p>
-          </div>
-        </div>
-
-        <div class="card" id="doce.png">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/doce.png"
-              alt="Docinhos pão-do-céu"
-            />
-          </div>
-          <div class="card__title">
-            <h2 class="recipe__name">Docinhos pão-do-céu</h2>
-          </div>
-          <div class="card__description">
-            <p class="author">Por Ricardo Golvea</p>
-            <p>R$ 72.55</p>
-          </div>
-        </div>
-
-        <div class="card" id="asinhas.png">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/asinhas.png"
-              alt="Asinhas de frango ao barbecue"
-            />
-          </div>
-          <div class="card__title">
-            <h2 class="recipe__name">Asinhas de frango ao barbecue</h2>
-          </div>
-          <div class="card__description">
-            <p class="author">Por Vania Steroski</p>
-            <p>R$ 39.99</p>
-          </div>
-        </div>
-
-        <div class="card" id="burger.png">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/burger.png"
-              alt="Triplo Bacon Burguer"
-            />
-          </div>
-          <div class="card__title">
-            <h2 class="recipe__name">Triplo Bacon Burguer</h2>
-          </div>
-          <div class="card__description">
-            <p class="author">Por Jorge Relato</p>
-            <p>R$ 14.99</p>
-          </div>
-        </div>
-
-        <div class="card" id="pizza.png">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/pizza.png"
-              alt="pizza 4 estações"
-            />
-          </div>
-          <div class="card__title">
-            <h2 class="recipe__name">Pizza 4 estações</h2>
-          </div>
-          <div class="card__description">
-            <p class="author">Por Fabianna Melo</p>
-            <p>R$ 72.55</p>
-          </div>
-        </div>
-
-        <div class="card" id="espaguete.png">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/espaguete.png"
-              alt="Espaguete ao alho"
-            />
-          </div>
-          <div class="card__title">
-            <h2 class="recipe__name">Espaguete ao alho</h2>
-          </div>
-          <div class="card__description">
-            <p class="author">Por Júlia Kinoto</p>
-            <p>R$ 72.55</p>
-          </div>
-        </div>
-
-        <div class="card" id="lasanha.png">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/lasanha.png"
-              alt="Lasanha mac n' cheese"
-            />
-          </div>
-          <div class="card__title">
-            <h2 class="recipe__name">Lasanha mac n' cheese</h2>
-          </div>
-          <div class="card__description">
-            <p class="author">Por Juliano Vieira</p>
-            <p>R$ 35.70</p>
-          </div>
-        </div>
-
-        <div class="card" id="doce.png">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/doce.png"
-              alt="Docinhos bem casado"
-            />
-          </div>
-          <div class="card__title">
-            <h2 class="recipe__name">Docinhos pão-do-céu</h2>
-          </div>
-          <div class="card__description">
-            <p class="author">Por Ricardo Golvea</p>
-            <p>R$ 72.55</p>
-          </div>
-        </div>
-
-        <div class="card" id="asinhas.png">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/asinhas.png"
-              alt="Asinhas de frango barbecue"
-            />
-          </div>
-          <div class="card__title">
-            <h2 class="recipe__name">Asinhas de frango ao barbecue</h2>
-          </div>
-          <div class="card__description">
-            <p class="author">Por Vania Steroski</p>
-            <p>R$ 39.99</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Modal -->
-    <div class="modal-overlay">
-      <div class="modal">
-        <img src="" />
-        <a class="close-modal">Fechar Modal</a>
+      <div class="banner__container-chef">
+        <img src="/assets/images/chef.png"/>
       </div>
     </div>
+  </main>
 
-    <!-- Footer -->
-    <footer>Todos direitos reservados, receitas Foodfy.</footer>
+  <!-- Cards Section -->
+  <section class="cards">
+    <h4>Mais Acessadas</h4>
+    <div class="card__container">
 
-    <script src="/assets/js/scripts.js"></script>
- 
-    {% endblock %}
+      {% for item in items %}
+        <div class="card" id="{{item.id}}">
+            <div class="card__thumbnail">
+              <img src="/assets/images/{{item.id}}" alt=" image de {{item.title}}"/>
+            </div>
+            <div class="card__title">
+              <h2 class="recipe__name">{{item.title}}</h2>
+            </div>
+            <div class="card__description">
+              <p class="author">{{item.author}}</p>
+              <p>{{item.price}}</p>
+            </div>
+        </div>
+      {% endfor %}
+
+    </div>
+
+  </section>
+
+  <!-- Modal -->
+  <div class="modal-overlay">
+    <div class="modal">
+      <img src=""/>
+      <a class="close-modal">Fechar Modal</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>Todos direitos reservados, receitas Foodfy.</footer>
+
+  <script src="/assets/js/scripts.js"></script>
+
+{% endblock %}

@@ -2,6 +2,7 @@ const express = require('express');
 const nunjucks = require('nunjucks');
 
 const server = express();
+const recipes = require("./data");
 
 server.use(express.static('public'));
 
@@ -23,7 +24,7 @@ server.get('/about', function(req, res) {
 })
 
 server.get('/recipes', function(req, res) {
-    return res.render('recipes')
+    return res.render('recipes', {items:recipes})
 })
 
 // end Routes
