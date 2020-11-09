@@ -10,8 +10,6 @@ for (let card of cards) {
   });
 }
 
-
-
 modalOverlay
   .querySelector('.close-modal')
   .addEventListener('click', function () {
