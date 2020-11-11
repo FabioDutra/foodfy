@@ -19,108 +19,26 @@
     </main>
 
     <!-- Cards Section -->
-    <section class="cards">
-      <h4>Mais Acessadas</h4>
-      <div class="card__container">
-        <div class="card">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/burger.png"
-              alt="Triplo Bacon Burguer"
-            />
-          </div>
-          <div class="card__title">
-            <h2 class="recipe-name">Triplo Bacon Burguer</h2>
-          </div>
-          <div class="card__description">
-            <p>Por Jorge Relato</p>
-            <p>R$ 14.99</p>
-          </div>
-        </div>
+  <section class="cards">
+    <h4>Mais Acessadas</h4>
+    <div class="card__container">
 
-        <div class="card">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/pizza.png"
-              alt="Pizza 4 estações"
-            />
-          </div>
-          <div class="card__title">
-            <h2>Pizza 4 estações</h2>
-          </div>
-          <div class="card__description">
-            <p>Por Fabianna Melo</p>
-            <p>R$ 72.55</p>
-          </div>
+      {% for item in items %}
+        <div class="card" id="{{item.image}}">
+            <div class="card__thumbnail">
+              <img src="{{item.image}}" alt=" image de {{item.title}}"/>
+            </div>
+            <div class="card__title">
+              <h2 class="recipe__name">{{item.title}}</h2>
+            </div>
+            <div class="card__description">
+              <p class="author">{{item.author}}</p>
+            </div>
         </div>
+      {% endfor %}
 
-        <div class="card">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/espaguete.png"
-              alt="espaguete ao alho"
-            />
-          </div>
-          <div class="card__title">
-            <h2>Espaguete ao alho</h2>
-          </div>
-          <div class="card__description">
-            <p>Por Júlia Kinoto</p>
-            <p>R$ 72.55</p>
-          </div>
-        </div>
+    </div>
 
-        <div class="card">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/lasanha.png"
-              alt="Lasanha mac n' cheese"
-            />
-          </div>
-          <div class="card__title">
-            <h2>Lasanha mac n' cheese</h2>
-          </div>
-          <div class="card__description">
-            <p>Por Juliano Vieira</p>
-            <p>R$ 35.70</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/doce.png"
-              alt="Docinhos pão-do-céu"
-            />
-          </div>
-          <div class="card__title">
-            <h2>Docinhos pão-do-céu</h2>
-          </div>
-          <div class="card__description">
-            <p>Por Ricardo Golvea</p>
-            <p>R$ 72.55</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card__thumbnail">
-            <img
-              src="/assets/images/asinhas.png"
-              alt="Asinhas de frango ao barbecue"
-            />
-          </div>
-          <div class="card__title">
-            <h2>Asinhas de frango ao barbecue</h2>
-          </div>
-          <div class="card__description">
-            <p>Por Vania Steroski</p>
-            <p>R$ 39.99</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-
-    <footer>Todos direitos reservados, receitas Foodfy.</footer>
+  </section>
  
     {% endblock %}

@@ -1,62 +1,21 @@
 {% extends "layout.njk" %}
 
-{% block content %}
+    {% block head %}
 
-  {% block head %}
+      <title>Foodfy - Recipes</title>
 
-    <title>Foodfy - Recipes</title>
+    {% endblock %}
 
-  {% endblock %}
+  {% block content %}
 
-  <main>
-    <div class="banner__container">
-      <div class="banner__container-content">
-        <h1>As melhores receitas</h1>
-        <p>
-          Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
-        </p>
-      </div>
-      <div class="banner__container-chef">
-        <img src="/assets/images/chef.png"/>
-      </div>
-    </div>
-  </main>
+ 
 
-  <!-- Cards Section -->
-  <section class="cards">
-    <h4>Mais Acessadas</h4>
-    <div class="card__container">
 
-      {% for item in items %}
-        <div class="card" id="{{item.id}}">
-            <div class="card__thumbnail">
-              <img src="/assets/images/{{item.id}}" alt=" image de {{item.title}}"/>
-            </div>
-            <div class="card__title">
-              <h2 class="recipe__name">{{item.title}}</h2>
-            </div>
-            <div class="card__description">
-              <p class="author">{{item.author}}</p>
-              <p>{{item.price}}</p>
-            </div>
-        </div>
-      {% endfor %}
-
-    </div>
-
-  </section>
-
-  <!-- Modal -->
-  <div class="modal-overlay">
+{# <div class="modal-overlay">
     <div class="modal">
       <img src=""/>
       <a class="close-modal">Fechar Modal</a>
     </div>
-  </div>
+  </div> #}
 
-  <!-- Footer -->
-  <footer>Todos direitos reservados, receitas Foodfy.</footer>
-
-  <script src="/assets/js/scripts.js"></script>
-
-{% endblock %}
+  {% endblock %}
