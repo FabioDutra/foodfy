@@ -4,7 +4,9 @@ const nunjucks = require('nunjucks');
 const server = express();
 const home = require('./data');
 
+server.use(express.urlencoded({ extended: true}))
 server.use(express.static('public'));
+
 
 server.set('view engine', 'njk');
 
