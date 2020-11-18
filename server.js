@@ -2,7 +2,7 @@ const express = require('express');
 const nunjucks = require('nunjucks');
 
 const server = express();
-const home = require('./data');
+const data = require('./data');
 
 server.use(express.urlencoded({ extended: true}))
 server.use(express.static('public'));
@@ -17,7 +17,7 @@ nunjucks.configure('views', {
 
 //Routes
 server.get('/', function (req, res) {
-  return res.render('home', {items: home});
+  return res.render('home', {items: data});
 });
 
 server.get('/about', function (req, res) {
