@@ -1,0 +1,26 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+   <title>{{recipes.title}}</title>
+{% endblock %}
+
+{% block content %}
+   <section>
+      
+      <div class="description__banner">
+         <img src="../assets/images/burger.png">
+      </div>
+      <div class="description__recipe-name">
+         <h1>{{recipes.title}}</h1>
+      </div>
+      <div class="description__author-name">
+         <p>Por Jorge Relato</p>
+      </div>
+      
+   </div>
+   
+</section>
+
+<section></section>
+
+{% endblock content %}
